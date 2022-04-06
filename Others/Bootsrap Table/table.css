@@ -1,0 +1,29 @@
+  @media only screen and (max-width:800px) {
+            #no-more-tables tbody,
+            #no-more-tables tr,
+           #no-more-tables td {
+                display: block;
+            }
+           
+            #no-more-tables thead tr {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                color: black;
+            }
+            #no-more-tables td {
+                position: relative;
+                padding-left: 50%;
+                border: none;
+                border-bottom: 1px solid #eee;
+            }
+            #no-more-tables td:before {
+                content: attr(data-title);
+                position: absolute;
+                left: 6px;
+                font-weight: bold;
+            }
+            #no-more-tables tr {
+                border-bottom: 1px solid #ccc;
+            }
+        } 
