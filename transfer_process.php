@@ -17,8 +17,11 @@ $flag = false;
 if ($result->num_rows > 0) {
     // output data of each row
     while ($row = $result->fetch_assoc()) {
-        if ($Amount > $row["Balance"] or $row["Balance"] - $Amount < 100 || ($Sender_Name == $Receiver_Name)) {
-            echo '<script>alert("Transaction Failed , Insuffiecent Balance Or Receiver Name Equal To The Sender!!"); window.location.href=" transfer.php";</script>';
+        if ($Amount > $row["Balance"]) {
+            echo '<script>alert("Transaction Failed , Insuffiecent Balance !!"); window.location.href=" transfer.php";</script>';
+        }
+        elseif(($Sender_Name == $Receiver_Name)){
+            echo '<script>alert("Transaction Failed ,  Receiver Name Equal To The Sender!!"); window.location.href=" transfer.php";</script>';
         } else {
             $sql = "UPDATE `all_users` SET Balance=(Balance-$Amount) WHERE Name='$Sender_Name'";
 
