@@ -20,6 +20,10 @@ if ($result->num_rows > 0) {
         if ($Amount > $row["Balance"]) {
             echo '<script>alert("Transaction Failed \n\n --->  Insuffiecent Balance !!"); window.location.href=" transfer.php";</script>';
         } 
+        elseif ($Amount < 0) {
+            echo '<script>alert("Transaction Failed \n\n --->  Negative Balance !!"); window.location.href=" transfer.php";</script>';
+        } 
+
         elseif(($Sender_Name == $Receiver_Name)){
             echo '<script>alert( "Transaction Failed \n\n ---> Sender Name = Receiver Name !!"); window.location.href=" transfer.php";</script>';
         }
