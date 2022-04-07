@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* ************* HEADER CSS *********************** */
+
+header {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+
+.logo {
+  text-decoration: none;
+  color: rgb(240, 191, 33);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.2em;
+}
+
+.SubLogo {
+  color: rgb(116, 111, 111);
+}
+
+.navigation a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: 500;
+  padding-left: 50px;
+}
+
+.navigation a:hover {
+  color: rgb(240, 191, 33);
+}
+
+/* *************** END HEADER CSS *********************** */
+
+/* *************** Transaction Table CSS *********************** */
+table {
+  width: 100%;
+  padding: 300px 40px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.Transaction h2 {
+  color: #ffbf10;
+  position: absolute;
+  top: 17%;
+  left: 38%;
+  font-size: 35px;
+  border: 10px solid rgb(0, 0, 0);
+  border-radius: 40px;
+  padding: 7px 10px;
+  background-color: #000000;
+}
+th {
+  border: 5px solid rgba(0, 0, 0, 0.658);
+  padding: 6px;
+  color: #ffbf10;
+  background-color: rgb(0, 0, 0);
+}
+td {
+  border: 3px solid rgb(0, 0, 0);
+  padding: 15px;
+}
+table :hover {
+  background-color: rgb(255, 255, 255);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(173, 171, 171);
+}
+tr:nth-child(odd) {
+  background-color: #ffbf10;
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    font-size: 15px;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /*
+	Label the data
+	*/
+  td:nth-of-type(1):before {
+    content: "Trans.ID :";
+  }
+  td:nth-of-type(2):before {
+    content: "Sender Name :";
+  }
+  td:nth-of-type(3):before {
+    content: "Reciever Name :";
+  }
+  td:nth-of-type(4):before {
+    content: "Amount :";
+  }
+  td:nth-of-type(5):before {
+    content: "Date :";
+  }
+}
+
+/* ********************** FOOTER CSS ************************ */
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 1.7em;
+  width: 100%;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.footer-title span {
+  color: rgb(255, 196, 0);
+}
+
+.footer-title span:hover {
+  color: rgb(141, 111, 11);
+}
+
+/* ************* END FOOTER CSS ************ */
+
+/* ? *****************Media Query For L.Desktop **************** */
+
+@media (max-width: 1280px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  .navigation a {
+    padding-left: 10px;
+  }
+}
+
+/* ? *****************Media Query For M.Desktop **************** */
+
+@media (max-width: 1025px) {
+  .Transaction h2 {
+    top: 15%;
+    left: 25%;
+  }
+
+  header {
+    padding: 12px 20px;
+  }
+
+  .navigation a {
+    padding-left: 10px;
+  }
+}
+/* ? *****************Media Query For Tablets**************** */
+
+@media (max-width: 641px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+}
+/* ? *****************Media Query For  Phones **************** */
+
+@media (max-width: 414px) {
+  header {
+    padding: 12px 1px;
+  }
+
+  .Transaction h2 {
+    top: 18%;
+    left: 20%;
+    font-size: 20px;
+  }
+
+  body {
+    font-size: 8px;
+  }
+}
+
+/* ? *****************Media Query For Small Phones **************** */
+
+@media (max-width: 280px) {
+  header {
+    padding: 12px 1px;
+  }
+  td {
+    font-size: 10px;
+  }
+  .Transaction h2 {
+    margin-top: 80px;
+    top: 1%;
+    left: 22%;
+    font-size: 14px;
+  }
+  body {
+    font-size: 6px;
+  }
+}

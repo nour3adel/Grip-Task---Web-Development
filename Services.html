@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Bank</title>
+
+    <!-- todo -------------------ICONS  --------------------- -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- todo -------------------SERVICES CSS --------------------- -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Services.css" />
+
+    <!-- todo ------------------- WEBSITE FAVICON --------------------- -->
+
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png" />
+  </head>
+
+  <body>
+    <!--!-------------------------- HEADER--------------------------  -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="index.html">
+              <h1>Local <span>Bank</span></h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <div class="navigation">
+              <ul>
+                <li>
+                  <a href="index.html" data-after="Home"><h1>Home</h1></a>
+                </li>
+                <li>
+                  <a href="Services.html" data-after="Service"
+                    ><h1>Services</h1></a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#contact" data-after="Contact"
+                    ><h1>Contact</h1></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--!--------------------------END HEADER--------------------------  -->
+
+    <!--!-------------------------- SERVICES SECTION ---------------------- -->
+
+    <section class="cards" id="services">
+      <h2 class="title">Serv <span class="ser">ices</span></h2>
+
+      <div class="content">
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-user-plus fa-3x"></i>
+          </div>
+          <div class="info">
+            <h3>Add New Bank Users</h3>
+            <p>You Can Add New Bank Users By Clicking On The Button Down..</p>
+          </div>
+          <div class="btn">
+            <button
+              onclick="location.href='newUser.php'"
+              type="button"
+              class="button"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-users fa-3x"></i>
+          </div>
+          <div class="info">
+            <h3>View All Bank Users</h3>
+            <p>
+              You Can View All The Bank Users By Clicking On The Button Down..
+            </p>
+          </div>
+          <div class="btn">
+            <button
+              onclick="location.href='users.php'"
+              type="button"
+              class="button"
+            >
+              View
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-money-bill-wave-alt fa-3x"></i>
+          </div>
+          <div class="info">
+            <h3>Transfer Money</h3>
+            <p>
+              You Can Transfer Money Using The User Name, Better To View All
+              Users First To Know Their Names..
+            </p>
+          </div>
+          <div class="btn">
+            <button
+              onclick="location.href='transfer.php'"
+              type="button"
+              class="button"
+            >
+              Transfer
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fa-regular fa-address-card fa-3x"></i>
+          </div>
+          <div class="info">
+            <h3>Transaction History</h3>
+            <p>
+              You Can View All The Transaction History Done By You Or Other
+              Users..
+            </p>
+          </div>
+          <div class="btn">
+            <button
+              onclick="location.href='transaction.php'"
+              type="button"
+              class="button"
+            >
+              Show
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--!--------------------------END SERVICES SECTION ---------------------- -->
+
+    <!--!-------------------------- FOOTER SECTION ---------------------- -->
+
+    <footer class="footer">
+      <p class="footer-title">
+        copyrights @
+        <span> Nour Adel </span>
+      </p>
+
+      <div class="social-icons">
+        <a class="link" href="https://www.linkedin.com/in/nour-adel-2a848421b/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="git" href="https://github.com/nour3adel">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="face" href="https://www.facebook.com/nour.3del.mo7med">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a class="twi" href="https://twitter.com/N3dell">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="ins" href="https://www.instagram.com/_nour3adel/">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!--!--------------------------END FOOTER SECTION ---------------------- -->
+
+    <!-- todo -------------------MAIN JS --------------------- -->
+
+    <script src="./Js/Main.js"></script>
+  </body>
+</html>

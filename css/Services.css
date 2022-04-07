@@ -1,0 +1,149 @@
+/* ************* SERVICES CSS ******************* */
+.ser {
+  color: rgb(73, 73, 73);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 166, 0);
+  font-size: 3em;
+  font-weight: 800;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgb(0, 0, 0);
+  height: 25.27em;
+  width: 30.27em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 70px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  transition: 0.7s ease;
+  color: rgb(255, 255, 255);
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: rgb(59, 57, 57);
+}
+
+.icon {
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: rgb(255, 166, 0);
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.button {
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(255, 166, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 100px;
+  padding: 15px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 60px 120px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.btn :hover {
+  background-color: rgba(255, 255, 255, 0.877);
+  color: black;
+}
+/* *********** END SERVICES CSS **************** */
+
+section {
+  padding: 200px 170px;
+}
+/* ? *****************Media Query For Desktop **************** */
+
+@media (max-width: 1280px) {
+  .brand h1 {
+    padding-left: 0px;
+    font-size: 2.3em;
+  }
+}
+
+/* ? *****************Media Query For Tablets **************** */
+@media (max-width: 641px) {
+  .button {
+    margin: 35px 70px;
+    font-size: 15px;
+  }
+
+  .brand h1 {
+    padding-left: 0px;
+    font-size: 2em;
+  }
+
+  body {
+    font-size: 12px;
+  }
+}
+
+/* ? *****************Media Query For Phones **************** */
+
+@media (max-width: 414px) {
+  .button {
+    padding: 7px 30px;
+    margin: 35px 45px;
+    font-size: 10px;
+  }
+  .card {
+    height: 34em;
+  }
+  .brand h1 {
+    padding-left: 0px;
+    font-size: 1.7em;
+  }
+
+  body {
+    font-size: 8px;
+  }
+}
+/* ? *****************Media Query For Small Phones **************** */
+
+@media (max-width: 280px) {
+  .title {
+    margin-left: -60px;
+  }
+  .card {
+    height: 35em;
+    margin-right: 100px;
+  }
+  .brand h1 {
+    font-size: 1.9em;
+  }
+  .button {
+    padding: 3px 30px;
+    margin: 30px 20px;
+    font-size: 10px;
+  }
+}

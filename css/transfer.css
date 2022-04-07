@@ -1,0 +1,59 @@
+/* form */
+.transfer {
+  margin-top: 50px;
+  border-radius: 100px;
+  position: absolute;
+  text-align: center;
+  right: 30%;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 40%;
+  padding: 60px 0px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.select h1 {
+  font-size: 20px;
+}
+input {
+  font-size: 20px;
+  width: 25%;
+  background-color: rgb(87, 87, 85);
+  color: aliceblue;
+}
+select {
+  cursor: pointer;
+  padding-right: 80px;
+  color: aliceblue;
+  font-size: 20px;
+  background-color: rgb(70, 70, 69);
+  border-radius: 10px;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .transfer {
+    width: 100%;
+    left: 0%;
+  }
+}
+.transfer h2 {
+  font-size: 35px;
+  color: rgb(230, 137, 24);
+  margin-bottom: 30px;
+}
+.transfer button {
+  cursor: pointer;
+  padding: 5px 40px;
+  margin-top: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(228, 115, 23);
+  border-radius: 100px;
+}
+.transfer button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
